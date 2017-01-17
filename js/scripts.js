@@ -1,6 +1,8 @@
 var sentenceArray = []
 
-var vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "Y" ]
+var vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O"]
+
+
 
 $(document).ready(function() {
   $("#blanks").submit(function(event) {
@@ -8,7 +10,6 @@ $(document).ready(function() {
     var userInput = $("input#item1").val();
     console.log('The userInput is: "' + userInput + '"');
     if (userInput) {
-      var sentenceArray = [];
       sentenceArray = userInput.split("");
       console.log("The length of sentenceArray is " + sentenceArray.length)
       var sentenceArrayIndex = 0;
@@ -22,7 +23,7 @@ $(document).ready(function() {
         };
       };
       var userOutput = sentenceArray.join("");
-      console.log('The userOutput is: "' + userOutput + '"');
+      // console.log('The userOutput is: "' + userOutput + '"');
       $("#resultsHere").append(userOutput);
       $("#blanks").hide();
       $("#results").show();
