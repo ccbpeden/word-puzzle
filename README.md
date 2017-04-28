@@ -4,7 +4,7 @@
 
 ## Description
 
-_A game!_
+_A game that uses a method to replace vowels in a string with the dash symbol "-" to create a word puzzle to solve._
 
 ## Setup/Installation Requirements
 
